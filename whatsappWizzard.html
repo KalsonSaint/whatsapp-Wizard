@@ -101,10 +101,10 @@
   </body>
   <script type="text/javascript">
     function openWhatsapp() {
-      var number = document.getElementById("number").value;
-      var message = document.getElementById("message").value;
-      if (number != 0) {
-        location.assign("whatsapp://send?text=" + message + "&phone=" + number);
+      let number = document.getElementById("number").value;
+      let message = document.getElementById("message").value;
+      if (number !== 0) {
+        window.location.assign(`whatsapp://send?text=${message}&phone=${number}`);
       }
     }
   </script>
